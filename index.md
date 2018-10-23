@@ -1,37 +1,93 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>XiaoShen - ChenJinFeng Page</title>
+    <link rel="stylesheet" type="text/css" href="http://mengxianliang.com/assets/css/main.css"/>
+</head>
 
-You can use the [editor on GitHub](https://github.com/FreeRxs/freerxs.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<body>
+<div class="vi">
+    <div class="sidebar">
+        <div class="header">
+            <h1>Chen JinFeng</h1>
+            <div class="quote">
+                <p class="quote-text animate-init">Action speaks louder than words.</p>
+                <p class="quote-author animate-init"> —— <strong>Go..!</strong></p>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="https://github.com/freerxs" class="animate-init" target="_blank">GitHub</a>
+            <a href="http://blog.csdn.net/freerxs" class="animate-init" target="_blank">CSDN</a>
+            <a href="http://weibo.com/freerxs" class="animate-init" target="_blank">WeiBo</a>
+            <p>
+                <a href="#" class="animate-init">
+                    关于
+                </a>
+            </p>
+        </div>
+        <div class="location">
+            <i class="location-icon"></i>
+            <span class="location-text animate-init">ShanXi - China</span>
+        </div>
+        <div class="relocating">
+            Navigating to: <span class="relocate-location"></span>...
+        </div>
+    </div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <div class="content">
+        <span class="close">close</span>
+    </div>
+</div>
+<script type="text/javascript" src="http://mengxianliang.com/assets/vendors/jquery/index.js"></script>
+<script>
+    $(document).ready(function () {
+        var delay = 1;
+        var DELAY_STEP = 200;
+        var animationOptions = { opacity: 1, top: 0};
 
-### Markdown
+        $('h1').animate(animationOptions).promise()
+                .pipe(animateMain)
+                .pipe(animateLocationIcon);
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        function animateMain() {
+            var dfd = $.Deferred();
+            var els = $('.animate-init');
+            var size = els.size();
 
-```markdown
-Syntax highlighted code block
+            els.each(function (index, el) {
+                delay++;
+                $(el).delay(index * DELAY_STEP)
+                        .animate(animationOptions);
+                (size - 1 === index) && dfd.resolve();
+            });
+            return dfd.promise();
+        }
 
-# Header 1
-## Header 2
-### Header 3
+        function animateLocationIcon() {
+            $('.location-icon').delay(delay * DELAY_STEP).animate({
+                opacity: 1,
+                top: 0
+            }).promise().done(animationQuote);
+        }
 
-- Bulleted
-- List
+        function animationQuote() {}
 
-1. Numbered
-2. List
+        $(document.body).on('keydown', function (event) {
+            // Press 'b' key
+            if (event.which === 66) {
+                $('.relocate-location').text('Bookmark Page');
+                $('.relocating').css('opacity', 1);
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FreeRxs/freerxs.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+                window.setTimeout(function () {
+                    window.location.href = '/bookmarks.html';
+                }, 1000);
+            }
+        });
+    });
+</script>
+<div style="display:none;"><script src="https://s6.cnzz.com/z_stat.php?id=2394&web_id=2394" language="JavaScript"></script></div>
+</body>
+</html>
