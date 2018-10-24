@@ -1,6 +1,6 @@
 # XIAOSHEN
 
-[![Xiaoshen Status](#)](#)
+[![Xiaoshen Status](https://travis-ci.org/ganlvtech/down_52pojie_cn.svg?branch=master)](#)
 
 "工欲善其事，必先利其器"
 
