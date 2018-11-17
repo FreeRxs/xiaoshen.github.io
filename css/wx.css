@@ -1,0 +1,22 @@
+@charset "utf-8";*{margin:0;padding:0;list-style-type:none;list-style-image:none}
+html{background-color:#000;background-image:url(http://ph3ijinje.bkt.clouddn.com/wx_bg.gif);background-position:center center;background-size:cover;background-repeat:no-repeat;background-attachment:fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;-webkit-text-size-adjust:none}
+body{font-size:11px;font-family:Verdana}
+img{border:none}
+.fix{clear:both;height:1px;font-size:0}
+::-webkit-scrollbar{width:9pt;height:9pt}
+::-webkit-scrollbar-button:vertical{display:none}
+::-webkit-scrollbar-track:vertical{background-color:#000}
+::-webkit-scrollbar-track-piece{background:#f4f4f4}
+::-webkit-scrollbar-thumb:vertical{border-radius:6px;background-color:#8e8e8e}
+::-webkit-scrollbar-thumb:vertical:hover{background-color:#3b3b3b}
+::-webkit-scrollbar-corner:vertical{background-color:#535353}
+::-webkit-scrollbar-resizer:vertical{background-color:#ff6e00}
+.weixin01{top:15%;left:17%;margin-right:auto;margin-left:auto;width:262px;height:534px;background-image:url(http://ph3ijinje.bkt.clouddn.com/wx_xiaoshen.png);background-position:left top}
+.weixin01,.weixin02{position:absolute;z-index:11;background-repeat:no-repeat}
+.weixin02{top:7%;right:13%;padding-bottom:15px;width:350px;background:#2F3035;border-radius: 0 0 4px 4px}
+.wx_top{width:350px;height:45px;background-image:url(http://ph3ijinje.bkt.clouddn.com/wx_top.png);background-repeat:no-repeat}
+.wx_top a{display:block;width:45px;height:45px;text-decoration:none}
+.wx_top a:hover{background-image:url(http://ph3ijinje.bkt.clouddn.com/wx_top_an2.png);background-repeat:no-repeat}
+.wx_z{background-color:#f4f4f4}
+.copyright{position:absolute;top:580px;width:390px;height:5pc;color:#fff;font-family:"Microsoft Yahei"}
+.statistics{position:fixed;top:0;left:0;z-index:10;width:100%;height:100%;background:transparent url(http://ph3ijinje.bkt.clouddn.com/pattern.png) repeat top left}
