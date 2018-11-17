@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/*屏蔽浏览器及运营商广告 开始*/
+body > iframe,.rollbar~*,.rollbar-div~*{opacity:0!important;display:none!important}
+/*屏蔽浏览器及运营商广告 结束*/
+/*----------------reset end----------------*/
+
+
+
+/*start*/
+body.panpwd,body.msgbg{height:100%;overflow:hidden;background:#f1f1f1}
+.message{background:#fff;box-shadow:1px 1px 6px rgba(0, 0, 0, 0.1)}
+.message h3{font-size:14px;font-weight:500}
+.message p{font-size:20px;color:#f90;margin:10px 0 20px;letter-spacing:1px}
+.message p i{font-size:18px;margin:0px 8px 0 0;color:#ffc46c}
+.message a{color:#2D8AC5}
+.pb1,.pb2,.pb3{position:absolute;border-radius:100%}
+.pb1{top:-172px;right:-240px;background:#7673FD;width:400px;height:440px}
+.pb2{width:284px;height:275px;background:#f1f1f1;top:-100px;right:-220px}
+.pb3{width:400px;height:400px;background:#00FED9;bottom:-200px;left:-200px}
+.passport,.message{width:600px;margin:-160px 0 0 -300px;border-radius:4px;padding:30px 0;text-align:center;position:absolute;top:50%;left:50%;z-index:100}
+.passport h3{font-size:24px;font-weight:700;color:#333}
+.passport form{margin:20px auto;display:block;width:100%;border-radius:6px;position:relative}
+.passport form i{position:absolute;font-size:28px;color:#ddd;left:16px;top:4px}
+.passport form .text{width:90%;display:block;height:48px;padding:0;border-radius:4px;font-size:16px;color:#555;background:#fff;text-indent:52px}
+.passport form .btn{color:#fff;position:absolute;right:0;top:0;width:18%;display:inline-block;font-size:18px;text-align:center;cursor:pointer;height:48px;line-height:48px;border-radius:4px}
+.passport p{font-size:14px;color:#f90}
+.passport p i{font-size:14px;margin:0 6px 0 0}
+@-webkit-keyframes orbloop{
+  from{-webkit-transform:rotate(0deg)}
+  to{-webkit-transform:rotate(360deg)}
+}
+@keyframes orbloop{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+@-webkit-keyframes orbmove{
+  from{-webkit-transform:translateX(-1000px)}
+  to{-webkit-transform:translateX(2000px)}
+}
+@keyframes orbmove{
+  from{transform:translateX(-1000px)}
+  to{transform:translateX(2000px)}
+}
+#bg{position:absolute;width:1000px;height:1000px;top:50%;left:50%;margin-left:-500px;margin-top:-500px}
+#bg div div{position:absolute}
+#bg{opacity:0}
+#bg .row1 div{-webkit-animation:orbmove 48s linear infinite;animation:orbmove 96s linear infinite}
+#bg .row1 .orb1{position:absolute;width:60px;height:60px;top:50%;left:50%;margin-left:-30px;margin-top:-380px}
+#bg .row1 .orb1 div{width:100%;height:100%;border-radius:60px;background:-webkit-linear-gradient(top,#ffffff,#dedede);background:linear-gradient(to bottom,#ffffff,#dedede);-webkit-animation:orbloop 6s linear infinite;animation:orbloop 6s linear infinite}
+#bg .row1 .orb2{position:absolute;width:100px;height:100px;top:50%;left:50%;margin-left:450px;margin-top:50px}
+#bg .row1 .orb2 div{width:100%;height:100%;border-radius:100px;background:-webkit-linear-gradient(top,#ffffff,#dedede);background:linear-gradient(to bottom,#ffffff,#dedede);-webkit-animation:orbloop 6s linear infinite;animation:orbloop 6s linear infinite}
+#bg .row1 .orb1c{position:absolute;width:60px;height:60px;top:50%;left:50%;margin-left:1970px;margin-top:-380px}
+#bg .row1 .orb1c div{width:100%;height:100%;border-radius:60px;background:-webkit-linear-gradient(top,#ffffff,#dedede);background:linear-gradient(to bottom,#ffffff,#dedede);-webkit-animation:orbloop 6s linear infinite;animation:orbloop 6s linear infinite}
+#bg .row1 .orb2c{position:absolute;width:100px;height:100px;top:50%;left:50%;margin-left:2450px;margin-top:50px}
+#bg .row1 .orb2c div{width:100%;height:100%;border-radius:100px;background:-webkit-linear-gradient(top,#ffffff,#dedede);background:linear-gradient(to bottom,#ffffff,#dedede);-webkit-animation:orbloop 6s linear infinite;animation:orbloop 6s linear infinite}
+#bg .row2 div{-webkit-animation:orbmove 24s linear infinite;animation:orbmove 48s linear infinite}
+#bg .row2 .orb1{position:absolute;width:200px;height:200px;top:50%;left:50%;margin-left:-500px;margin-top:-300px}
+#bg .row2 .orb1 div{width:100%;height:100%;border-radius:200px;background:-webkit-linear-gradient(top,#ffffff,#dedede);background:linear-gradient(to bottom,#ffffff,#dedede);-webkit-animation:orbloop 6s linear infinite;animation:orbloop 6s linear infinite}
+#bg .row2 .orb2{position:absolute;width:250px;height:250px;top:50%;left:50%;margin-left:175px;margin-top:-125px}
+#bg .row2 .orb2 div{width:100%;height:100%;border-radius:250px;background:-webkit-linear-gradient(top,#ffffff,#dedede);background:linear-gradient(to bottom,#ffffff,#dedede);-webkit-animation:orbloop 6s linear infinite;animation:orbloop 6s linear infinite}
+#bg .row2 .orb1c{position:absolute;width:200px;height:200px;top:50%;left:50%;margin-left:1500px;margin-top:-300px}
+#bg .row2 .orb1c div{width:100%;height:100%;border-radius:200px;background:-webkit-linear-gradient(top,#ffffff,#dedede);background:linear-gradient(to bottom,#ffffff,#dedede);-webkit-animation:orbloop 6s linear infinite;animation:orbloop 6s linear infinite}
+#bg .row2 .orb2c{position:absolute;width:400px;height:400px;top:50%;left:50%;margin-left:2100px;margin-top:-200px}
+#bg .row2 .orb2c div{width:100%;height:100%;border-radius:400px;background:-webkit-linear-gradient(top,#ffffff,#dedede);background:linear-gradient(to bottom,#ffffff,#dedede);-webkit-animation:orbloop 6s linear infinite;animation:orbloop 6s linear infinite}
+#bg .row3 div{-webkit-animation:orbmove 12s linear infinite;animation:orbmove 24s linear infinite}
+#bg .row3 .orb1{position:absolute;width:300px;height:300px;top:50%;left:50%;margin-left:850px;margin-top:-300px}
+#bg .row3 .orb1 div{width:100%;height:100%;border-radius:300px;background:-webkit-linear-gradient(top,#dedede,#ffffff);background:linear-gradient(to bottom,#dedede,#ffffff);-webkit-animation:orbloop 6s linear infinite;animation:orbloop 6s linear infinite}
+#bg .row3 .orb2{position:absolute;width:600px;height:600px;top:50%;left:50%;margin-left:0px;margin-top:0px}
+#bg .row3 .orb2 div{width:100%;height:100%;border-radius:600px;background:-webkit-linear-gradient(top,#dedede,#ffffff);background:linear-gradient(to bottom,#dedede,#ffffff);-webkit-animation:orbloop 6s linear infinite;animation:orbloop 6s linear infinite}
+#bg .row3 .orb1c{position:absolute;width:300px;height:300px;top:50%;left:50%;margin-left:2850px;margin-top:-300px}
+#bg .row3 .orb1c div{width:100%;height:100%;border-radius:300px;background:-webkit-linear-gradient(top,#dedede,#ffffff);background:linear-gradient(to bottom,#dedede,#ffffff);-webkit-animation:orbloop 6s linear infinite;animation:orbloop 6s linear infinite}
+#bg .row3 .orb2c{position:absolute;width:600px;height:600px;top:50%;left:50%;margin-left:2000px;margin-top:0px}
+#bg .row3 .orb2c div{width:100%;height:100%;border-radius:600px;background:-webkit-linear-gradient(top,#dedede,#ffffff);background:linear-gradient(to bottom,#dedede,#ffffff);-webkit-animation:orbloop 6s linear infinite;animation:orbloop 6s linear infinite}
+/*end*/
+
+/*----------------IE兼容 开始----------------*/
+/*IE8 start*/
+.ie8 .panlist dl{padding:0;width:49%;margin:15px 0.5% 0}
+.ie8 .panlist dl dt{margin:20px -180px 20px 20px}
+.ie8 .panlist dl dd{margin:20px 20px 20px 220px}
+.ie8 .aside .w1 li{width:32.5px}
+.ie8 .aside .w4 li{width:25.8%}
+.ie8 .zplist .list li{width:17.96%}
+.ie8 .textinfo .tool li.t1 a{background:#EC872D}
+.ie8 .textinfo .tool li.t2 a{background:#2D8AC5}
+.ie8 [data-microtip]:after,.ie8 [data-microtip]:before{display:none}
+.ie8 .bwlist dt a.t,.ie8 .buylist dt a{background:rgba(0,0,0,.6)}
+.ie8 .bwlist dt a.t.t1,.ie8 .buylist dt a.c171{background:#24A686}
+.ie8 .bwlist dt a.t.t2,.ie8 .buylist dt a.c172{background:#FF4D4D}
+.ie8 .bwlist dt a.t.t3,.ie8 .buylist dt a.c173{background:#4075B7}
+.ie8 .bwlist dt a.t.t4,.ie8 .buylist dt a.c174{background:#FF6100}
+.ie8 .bwlist dt a.t.t5,.ie8 .buylist dt a.c175{background:#F21684}
+.ie8 .bwlist dt a.t.t6,.ie8 .buylist dt a.c176{background:#3A985A}
+.ie8 .bwlist dt a.t.t7.,.ie8 .buylist dt a.c177{background:#E9B62D}
+.ie8 .bwlist dt a.t:hover,.ie8 .buylist dt a:hover{background:#f90}
+.ie8 .znav.z141,.ie8 .znav.z58{border-left:1px solid #f90;border-right:1px solid #f90}
+.ie8 .ptloop dl{width:22.7%}
+/*IE8 end*/
+/*----------------IE兼容 结束----------------*/
