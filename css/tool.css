@@ -1,0 +1,588 @@
+/*	==========================================================================
+	General styles
+	========================================================================== */
+
+/* Font sizes used
+
+Base font size: 1rem = 18px
+
+0.702rem	13px
+0.79rem		14px
+0.889rem	16px
+1.125rem	20px
+1.266rem	23px
+1.424rem	26px
+1.602rem	29px
+1.802rem	32px
+2.887rem	52px
+
+http://modularscale.com/
+8:9 major second
+*/
+
+:root {
+	--background-color: #fff;
+	--main-text-color: #3a4145;
+	--secondary-text-color: #9eabb3;
+	--link-color: #fc7e0f;
+
+	--table-border-color: #efefef;
+	--th-background-color: #f6f6f6;
+
+	--font-size-minus-3: 0.702rem;
+	--font-size-minus-2: 0.79rem;
+	--font-size-minus-1: 0.889rem;
+	--font-size-plus-1: 1.125rem;
+	--font-size-plus-2: 1.266rem;
+	--font-size-plus-3: 1.424rem;
+	--font-size-plus-4: 1.602rem;
+	--font-size-plus-5: 1.802rem;
+	--font-size-plus-6: 2.281rem;
+	--font-size-plus-7: 2.887rem;
+}
+
+html {
+    height: 100%;
+    max-height: 100%;
+    font-size: 112.5%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    height: 100%;
+    max-height: 100%;
+    width: 80%;
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: PingFang SC, Hiragino Sans GB, Helvetica Neue, Helvetica, Microsoft YaHei, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--main-text-color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+		font-weight: 500;
+}
+
+h1 {
+	font-size: var(--font-size-plus-5);
+}
+
+h2 {
+	font-size: var(--font-size-plus-4);
+}
+
+h3 {
+	font-size: var(--font-size-plus-3);
+}
+
+h4 {
+	font-size: var(--font-size-plus-2);
+}
+
+h5 {
+	font-size: var(--font-size-plus-1);
+}
+
+h6 {
+	font-size: 1rem;
+}
+
+p {
+	margin-top: 0;
+}
+
+code, tt, pre {
+	font-family: Menlo, Monaco, "Courier New", Courier, monospace;
+	white-space: pre-wrap;
+	font-size: var(--font-size-minus-1);
+	border: none;
+	background: none;
+	background: rgba(0, 0, 0, 0.05);
+	padding: 4px 4px;
+	border-radius: 5px;
+}
+
+code, tt {
+	font-weight: 500;
+}
+
+pre code {
+	font-weight: 300;
+}
+
+blockquote {
+	margin: 0 2em;
+	color: var(--secondary-text-color);
+}
+
+blockquote p {
+    margin: 0.8em 0;
+    font-style: italic;
+}
+
+blockquote cite {
+	font-style: normal;
+	font-size: var(--font-size-minus-1)
+}
+
+hr {
+	display: block;
+	border: 0;
+	text-align: center;
+	overflow: visible;
+	margin: 2em;
+}
+
+hr:before {
+	content: '...';
+  display: inline-block;
+  margin-left: .6em;
+  color: rgba(0,0,0,.68);
+  position: relative;
+  top: -20px;
+	letter-spacing: .6em;
+}
+
+/* Links */
+.post-content a {
+		color: rgba(0,0,0,.84);
+    text-decoration: none;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to right,rgba(0,0,0,.84) 100%,rgba(0,0,0,0) 0);
+    background-size: 1px 1px;
+    background-position: 1px calc(1em + 3px);
+}
+
+a.read-more, a.read-more:hover, a.read-more:visited {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: var(--main-text-color);
+	text-decoration: none;
+}
+
+.post-title a {
+	color: var(--main-text-color) !important;
+	text-decoration: none !important;
+}
+
+/* Tables and dictionaries (straight up ripped out of the Casper stylesheet with minor modifications) */
+
+table {
+	box-sizing: border-box;
+	margin: 1.7em 0;
+	width: 100%;
+	max-width: 100%;
+	background-color: transparent;
+  overflow: auto;
+}
+
+table th {
+    font-weight: 600
+}
+
+table td, table th {
+    border: 1px solid #dfe2e5;
+    padding: 6px 13px
+}
+
+table tr {
+    background-color: #fff;
+    border-top: 1px solid #c6cbd1
+}
+
+table tr:nth-child(2n) {
+    background-color: #f6f8fa
+}
+
+
+td h3, td h4, td h5, td h6 {
+	margin: 0 0 0.5rem 0;
+}
+
+table caption + thead tr:first-child th,
+table caption + thead tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+    border-top: 0;
+}
+
+dl dt {
+    float: left;
+    width: 180px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+dl dd {
+    margin-left: 200px;
+    margin-bottom: 1em
+}
+
+/*	==========================================================================
+	Blog header
+	========================================================================== */
+
+.main-header {
+    position: relative;
+    width: 100%;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    display: table;
+}
+
+.main-header-content {
+	height: auto;
+}
+
+.blog-title {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Lato", sans-serif; */
+	font-weight: 300;
+    font-size: var(--font-size-plus-7);
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.blog-title a {
+	font-color: inherit;
+}
+
+.blog-description {
+    margin: 0;
+    font-size: var(--font-size-minus-1);
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: var(--secondary-text-color);
+    font-weight: 300;
+}
+
+/*	==========================================================================
+	Navigation
+	========================================================================== */
+
+.nav {
+	margin-top: 1rem;
+}
+
+.nav {
+	text-transform: uppercase;
+	font-size: .889rem;
+}
+
+.nav a {
+	margin: 0 0.5rem;
+	color: var(--secondary-text-color);
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: var(--link-color);
+}
+
+a.nav-current {
+	color: var(--link-color);
+}
+
+a.nav-home, a.nav-blog {
+	color: var(--secondary-text-color);
+}
+
+/*	==========================================================================
+	Site footer
+	========================================================================== */
+
+.site-footer {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    overflow: hidden;
+    font-size: .79rem;
+}
+
+.site-footer a {
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+.site-footer a:hover {
+	color: var(--secondary-text-color);
+}
+
+
+/* RSS - enable to replace the simple RSS icon with a round button */
+
+/*
+.site-footer .rss {
+	margin: 1rem auto;
+	width: 1.7rem;
+	height: 1.6rem;
+}
+
+.site-footer .rss a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin-left: -.2rem;
+	padding: .35rem .1rem 0.05rem .2rem;
+	vertical-align: middle;
+	border: 1px var(--link-color) solid;
+	border-radius: 1.2rem;
+}
+
+.site-footer .rss a:hover {
+	color: var(--background-color);
+	background: var(--link-color);
+}
+*/
+
+/*	==========================================================================
+	Posts
+	========================================================================== */
+
+.post {
+    position: relative;
+    margin: 2rem auto;
+    padding-bottom: 4rem;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.post-header {
+	margin-bottom: 1.5rem;
+}
+
+.post-title {
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.post-meta {
+	text-transform: uppercase;
+	font-size: .79rem;
+	color: var(--secondary-text-color);
+}
+
+.post-footer {
+	margin-top: 2rem;
+}
+
+.post-footer .tags a {
+	color: var(--secondary-text-color);
+	text-decoration: none;
+}
+
+.post-footer .tags a:hover {
+	color: var(--link-color);
+}
+
+.post-footer h4 {
+	margin: 2rem 0 0;
+}
+
+.post img {
+	display: block;
+	max-width: 100%;	/* Keep image contained in width of post */
+	margin: 0 auto 0.5rem;
+}
+
+.footnotes-sep {
+	display: none;
+}
+
+/* Koenig image styles */
+
+.kg-image-card {
+	margin-bottom: 0.5rem;
+}
+
+.kg-image-card img {
+	margin-bottom: 0;
+}
+
+.kg-width-wide {
+	max-width: 1120px;
+	margin: 0 -200px;
+}
+
+@media (max-width: 1100px) {
+	.kg-width-wide {
+		max-width: 140%;
+		margin: 0 -20%;
+	}
+}
+
+@media (max-width: 950px) {
+	.kg-width-wide {
+		max-width: 120%;		/* Start calculating as percentage of viewport? */
+		margin: 0 -10%;
+	}
+}
+
+.kg-width-full {
+	max-width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+.kg-image-card figcaption {
+	font-size: var(--font-size-minus-2);
+	text-align: center;
+	color: rgba(0,0,0,.68);
+	margin: 1em auto 2em;
+}
+
+iframe {
+    margin: 1em;
+}
+
+/* YouTube embed wrapper to scale to full-width */
+
+.yt-wrapper {
+	position: relative;
+	width: 100%;
+	margin: 0;
+}
+
+.yt-wrapper:before{
+	content: "";
+	display: block;
+	padding-top: 56.25%;	/* 16:9 aspect ratio */
+}
+
+.yt-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*	==========================================================================
+	Tags
+	========================================================================== */
+
+.tag-title {
+  font-size: var(--font-size-plus-5);
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.tag-image {
+	max-width: 100%
+}
+
+.tag-description {
+	color: var(--secondary-text-color);
+}
+
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
+/* The main wrapper for pagination links */
+.pagination {
+    position: relative;
+    margin: 2rem auto;
+    font-size: .79rem;
+    color: var(--secondary-text-color);
+    text-align: center;
+}
+
+.pagination a {
+    color: var(--secondary-text-color);
+}
+
+/* Push the previous/next links out to the left/right */
+.older-posts,
+.newer-posts {
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.older-posts {
+    right: 0;
+}
+
+.page-number {
+    display: inline-block;
+    padding: 2px 0;
+    min-width: 100px;
+}
+
+.newer-posts {
+    left: 0;
+}
+
+.older-posts:hover,
+.newer-posts:hover {
+    color: var(--link-color);
+}
+
+.extra-pagination {
+    display: none;
+}
+
+.extra-pagination .pagination {
+    width: auto;
+}
+
+/* On page2+ show extra pagination controls at the top of post list */
+.paged .extra-pagination {
+    display: block;
+}
+
+/* ==========================================================================
+   12. Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 500px) {
+
+	html {
+		font-size: 100%; /* Reduce from 112.5% */
+	}
+
+   .blog-title {
+		font-size: var(--font-size-plus-6);
+	}
+
+	.blog-description {
+	   font-size: var(--font-size-minus-1);
+	}
+}
+
+/* 🌑 DARK MODE 🌑 */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-color: #101213;
+		--main-text-color: #e7e9ea;
+		--secondary-text-color: #6e787f;
+		--link-color: #f65f09;
+
+		--table-border-color: #212528;
+		--th-background-color: #1e2124;
+	}
+}
