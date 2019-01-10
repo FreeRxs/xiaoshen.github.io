@@ -5,6 +5,7 @@ permalink: /404.html
 <html>
     <head>
         <title>Not Found. ChenJinFeng</title>
+        <meta http-equiv="refresh" content="3;URL=index.html"> 
         <style>
             @font-face {
                 font-family: 'Lato';
