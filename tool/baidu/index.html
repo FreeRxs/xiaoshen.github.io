@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" id="viewport" content="width=640px, user-scalable=no">
+  <title>BD ID/UID API接口</title>
+  <script>
+  // 计算页面的实际高度，iframe自适应会用到
+  function calcPageHeight(doc) {
+      var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight)
+      var sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight)
+      var height  = Math.max(cHeight, sHeight)
+      return height
+  }
+  //根据ID获取iframe对象
+  var ifr = document.getElementById('main')
+  ifr.onload = function() {
+  	  //解决打开高度太高的页面后再打开高度较小页面滚动条不收缩
+  	  ifr.style.height='0px';
+      var iDoc = ifr.contentDocument || ifr.document
+      var height = calcPageHeight(iDoc)
+      if(height < 1050){
+      	height = 1050;
+      }
+      ifr.style.height = height + 'px'
+  }
+</script>
+<script type="text/javascript">var system = {};var p = navigator.platform;var u = navigator.userAgent;system.win = p.indexOf("Win") == 0;system.mac = p.indexOf("Mac") == 0;system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);if (system.win || system.mac || system.xll) {if (u.indexOf('Windows Phone') > -1) {}else {window.location.href = "js";}}</script>
+ </head>
+ <body bgcolor="#ccc">
+
+ <h1 style="text-align:center;">
+	<span style="color:#337FE5;">网安国际 内部使用</span>
+</h1>
+<div class="main_page">
+	 <iframe scrolling="no" id="main" name="main" frameborder="0"  src="http://qd.yyimg.com/act/index/id" style="min-height:600px;width:100%;height:100%;"></iframe>
+</div>
+<div style="display:none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_2393'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D2393' type='text/javascript'%3E%3C/script%3E"));</script></div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a2b9ecd0e80c4e644ec3ca1a94c92b17";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
