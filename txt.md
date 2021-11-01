@@ -7,7 +7,7 @@
 
 相关链接
 
-* [d3ecf5726d15b62f](#)  [APK](https://www.lanzouw.com/izTe3w08o5e)
+* [d3ecf5726d15b62f](#)  [[APK]](https://www.lanzouw.com/izTe3w08o5e)
 * [e4da7455b28f053f](#)
 * [9f77fc393e5393fd](#)
 
