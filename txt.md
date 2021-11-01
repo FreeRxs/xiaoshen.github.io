@@ -7,7 +7,7 @@
 
 相关链接
 
-* [d3ecf5726d15b62f](#)    [[APK v1.6.6]](https://www.lanzouw.com/izTe3w08o5e)  [[MSI 1.6.6]](https://download.zerotier.com/RELEASES/1.6.6/dist/ZeroTier%20One.msi)
+* [d3ecf5726d15b62f](#)    [APK [v1.6.6](https://www.lanzouw.com/izTe3w08o5e)]  [[MSI 1.6.6]](https://download.zerotier.com/RELEASES/1.6.6/dist/ZeroTier%20One.msi)
 * [e4da7455b28f053f](#)
 * [9f77fc393e5393fd](#)
 
