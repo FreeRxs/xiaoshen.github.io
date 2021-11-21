@@ -27,3 +27,8 @@
 > 
 
 <audio controls="controls" autoplay="autoplay" loop="loop" src="https://demo.yzmcms.com/music/Two Steps From Hell - Victory.mp3">Your browser does not support the audio element.</audio>
+
+
+<--audio autoplay="" loop="1"><source src="url"></audio> 不显示
+
+<--video src="mp4 url" style="width: 100%;height: 100%;object-fit: cover;position: absolute;top: 0;left: 0;" autoplay="autoplay" loop="loop" muted="muted"></video> Mp4背景
