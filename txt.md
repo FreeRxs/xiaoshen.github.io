@@ -12,7 +12,7 @@ ZeroTier相关链接
 
 Emby相关链接
 
-* [172.22.22.111](#)  [Android [v3.0.87](https://wwd.lanzouw.com/ibz2f029hihe)] ; [Android TV [v2.0.55g](https://wwd.lanzouw.com/iiHwv029fdte
+* [172.22.22.111:8096](#)  [Android [v3.0.87](https://wwd.lanzouw.com/ibz2f029hihe)] ; [Android TV [v2.0.55g](https://wwd.lanzouw.com/iiHwv029fdte
 )]
 * [192.168.192.111](#)  
 
