@@ -8,8 +8,7 @@
 ZeroTier相关链接
 
 * [d3ecf5726d15b62f](#)(主服务)      [APK [v1.6.6](https://wwd.lanzouw.com/iic8S029hznc),[v1.8.1](https://wwd.lanzouw.com/iv9qQ029hzva)] ; [MSI [v1.6.6](https://download.zerotier.com/RELEASES/1.6.6/dist/ZeroTier%20One.msi),[v1.8.1](https://download.zerotier.com/RELEASES/1.8.1/dist/ZeroTier%20One.msi)] ; [IOS [v1.6.6](https://download.zerotier.com/RELEASES/1.6.6/dist/ZeroTier%20One.pkg),[v1.8.1](https://download.zerotier.com/RELEASES/1.8.1/dist/ZeroTierOne.pkg)]
-* [e4da7455b28f053f](#)(备用服务)
-* [9f77fc393e5393fd](#)(备用服务)
+* [af415e486fbe5734](#)(公共服务)
 
 Emby相关链接
 
