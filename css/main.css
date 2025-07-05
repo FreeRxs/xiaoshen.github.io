@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+.top-nav__site-logo{background-color:#4281da;-webkit-text-fill-color:transparent;-webkit-background-clip:text;background-clip:text;background-image:radial-gradient(circle,#d0e7ff 15%,#4090ff,#fff,#6ca6ff,#f0f8ff,#4a90e2 90%);font-weight:400;font-size:2.5rem;text-shadow:rgba(64,144,255,.75) 0 0 8px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;text-transform:uppercase}
 body {
     font: 16px/1.8 "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
     color: #333;
